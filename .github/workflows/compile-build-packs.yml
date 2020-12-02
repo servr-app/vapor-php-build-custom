@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build php-73:
+  build php_73:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
       - name: Building Compiler
         run: cd php73 && make distribution
 
-  build php-74:
+  build php_74:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +25,7 @@ jobs:
       - name: Building Compiler
         run: cd php74 && make distribution
   
-  build php-80:
+  build php_80:
     runs-on: ubuntu-latest
 
     steps:
